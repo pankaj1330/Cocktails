@@ -7,12 +7,12 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 export default function AppProvider({children}){
     const [loading,setLoading] = useState(false);
     const [cocktails,setCocktails] = useState([]);
-    const [input,setInput] = useState('a');
+    const [input,setInput] = useState('');
 
     async function fetchCocktails(){
         try{
             setLoading(true);
-            const response = await fetch(`${url}${input}`);
+            const response = await fetch(`${url}${input === "" ? "a" : input}`);
             const data = await response.json();
             
             const cocktailData = data.drinks.map(cocktail => {
