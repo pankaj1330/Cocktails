@@ -7,7 +7,7 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 export default function AppProvider({children}){
     const [loading,setLoading] = useState(false);
     const [cocktails,setCocktails] = useState([]);
-    const [input,setInput] = useState('');
+    const [input,setInput] = useState('a');
 
     async function fetchCocktails(){
         try{
