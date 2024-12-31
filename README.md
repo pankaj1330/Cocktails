@@ -1,7 +1,5 @@
 # Cocktails
 
-# Cocktail Finder
-
 Cocktail Finder is a React.js-based web application that allows users to search for cocktails by name. The app provides details about each cocktail, including its ingredients, whether it is alcoholic, and any associated health information. 
 The project leverages TheCocktailDB API to fetch cocktail data dynamically.
 
